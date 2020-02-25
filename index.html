@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <title></title>
+
+
+    <style>
+      .box {
+        position: relative;
+        top:800px;
+        margin-top: 250px;
+        padding: 50px;
+        margin: 20px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="box a" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+        <h2>Animated using fade-up.</h2>
+    </div>
+
+    <div class="box b" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+      <h2>Animated using flip-down.</h2>
+    </div>
+    <div class="box b" data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+      <h2>Animated using zoom-in.</h2>
+    </div>
+
+  <div data-aos="fade-up" data-aos-anchor=".other-element"></div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    // import AOS from 'aos';
+    // import 'aos/dist/aos.css'; // You can also use <link> for styles
+    AOS.init();
+
+
+  // AOS.refresh();
+  </script>
+  </body>
+</html>
